@@ -1,0 +1,10 @@
+{
+    "Education": ["ITMO University 2016-2020"],
+    "Experience": [
+        "March 2018 - October 2018. GoodWix",
+        "November 2018 - March 2019. CityLife",
+        "March 2019 - Now. Yandex"
+    ],
+    "Tech stack": ["Javascript", "Typescript", "Flow", "React", "Node"],
+    "Contact": ["own3d.rus@gmail.com", "@Ermakoy"]
+}

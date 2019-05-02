@@ -23,9 +23,8 @@ function main() {
 async function resumeHandler() {
   const { resumeOptions } = await inquirer.prompt(resumePrompts);
   if (resumeOptions === 'Exit') return;
-
   console.log(response('--------------------------------------'));
-  resume[`${option}`].forEach(info => console.log(response(`|   => ${info}`)));
+  resume[`${resumeOptions}`].forEach(info => console.log(response(`|   => ${info}`)));
   console.log(response('--------------------------------------'));
 
   const { exitBack } = await inquirer.prompt({
@@ -34,7 +33,7 @@ async function resumeHandler() {
     message: 'Go back or Exit?',
     choices: ['Back', 'Exit']
   });
-  
+
   if (exitBack == 'Back') {
     resumeHandler();
   } else {
